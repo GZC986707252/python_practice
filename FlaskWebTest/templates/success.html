@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    {% for msg in msg%}
+    <head>
+        <title>{{msg.status}}</title>
+    </head>
+    <body>
+        用户： <label>{{msg.user.name}}</label>
+        密码： <label>{{msg.user.password}}</label>
+    </body>
+    {% endfor %}
+</html>
